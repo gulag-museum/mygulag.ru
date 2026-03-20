@@ -2,6 +2,7 @@
 configuration.php
 .env
 settings.py
+http.py
 
 # Логи и временные файлы
 *.log
