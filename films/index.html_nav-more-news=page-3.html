@@ -1,0 +1,406 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой ГУЛАГ</title>
+    <link rel="stylesheet" href="../local/templates/main/assets/css/app.css">
+    <link rel="stylesheet" href="../local/templates/main/assets/css/app2.css">
+    <link rel="icon" href="../local/templates/main/assets/img/favicon.png">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+</head>
+<body>
+<div id="wrapper">
+    <header id="header" class="compensate-for-scrollbar">
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x align-middle">
+                <div class="cell top">
+                    <div class="grid-x">
+                        <div class="cell auto department show-for-large">
+                            Студия визуальной антропологии Музея истории ГУЛАГа
+                        </div>
+                        <div class="cell shrink actions">
+                            <span class="address"><a href="../contacts/index.html">
+                                Контакты <i class="icon-phone"> </i></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell logo auto large-shrink">
+                    <a href="../index.html">
+                        <img src="../local/templates/main/assets/img/logos/logo_wht.svg" alt="Мой ГУЛАГ" />
+                    </a>
+                </div>
+
+                
+<nav class="cell auto main-menu">
+    <ul class="menu vertical">
+
+	
+	
+		
+			                <li ><a href="../about/index.html">О проекте</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+			                <li class="active"><a href="index.html">Фильмы</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+			                <li ><a href="../search/index.html">Поиск по тексту</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+			                <li ><a href="../map.html">Карта съёмок</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+			                <li ><a href="../team/index.html">Команда</a></li>
+			
+		
+	
+	
+
+                </ul>
+</nav>
+
+                <div class="cell shrink placemark hide-for-large">
+                    <a href="../map.html" aria-label="Контакты">
+                        <i class="icon-placemark"></i>
+                    </a>
+                </div>
+                <div class="cell shrink menu-toggle hide-for-large">
+                    <button class="burger" data-toggle-menu aria-label="Показать меню">
+                        <div>
+                            <i class="i1"></i>
+                            <i class="i2"></i>
+                            <i class="i3"></i>
+                        </div>
+                    </button>
+                </div>
+                <!--
+                <div class="cell shrink search">
+                    <button class="icon-search" data-toggle-search aria-label="Поиск по сайту"></button>
+                </div>
+                -->
+            </div>
+        </div>
+        <div class="menu-bg"> </div>
+    </header>
+    <div class="menu-overlay"></div>
+    <!--
+    <form class="search-overlay" action="search.html">
+        <div class="inner">
+            <div>
+                <i class="icon-close show-for-large" aria-label="Скрыть" role="button" data-close></i>
+                <div class="grid-container">
+                    <label class="seamless search-input">
+                        <input type="text" autofocus="0" name="query" placeholder="Поиск по сайту" required />
+                        <button type="submit" aria-label="Искать"><i class="icon-search"> </i></button>
+                        <div class="line"></div>
+                    </label>
+                    <div class="text-center">
+                        <a class="button outline hide-for-large" role="button" data-toggle-search>Закрыть поиск</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    -->
+
+    <div id="content-wrapper">
+
+<section class="month-picker publishing " data-load-publications-from="#" id="publications">
+
+    <div class="grid-container">
+        <div class="heading">Фильмы</div>
+        <form action="index.html_nav-more-news=page-3.html#publications" autocomplete="off" id="search_publication_form">
+            <label class="seamless small search-input">
+                <i class="icon-close search-close"> </i>
+                <div class="sub-heading">Поиск фильмов</div>
+                <input type="text" autocomplete="off" name="search" placeholder="Поиск" required value="" />
+                <button type="submit" aria-label="Искать"><i class="icon-search"> </i></button>
+                <div class="line"> </div>
+            </label>
+            <input type="hidden" name="category" value="" />
+            <input type="hidden" name="sort" value="" />
+        </form>
+        <div class="grid-x grid-padding-x">
+            <div class="cell medium-4 select-outer">
+                <div class="custom-select">
+                    <select name="category">
+                        <option value="">Все категории</option>
+                                                    <option value="Депортированные" >Депортированные</option>
+                                                    <option value="Дети репреcсированных" >Дети репреcсированных</option>
+                                                    <option value="Дети сотрудников НКВД" >Дети сотрудников НКВД</option>
+                                                    <option value="Диссиденты" >Диссиденты</option>
+                                                    <option value="Лагерники" >Лагерники</option>
+                                                    <option value="Раскулаченные" >Раскулаченные</option>
+                                                    <option value="Свидетели" >Свидетели</option>
+                                                    <option value="Сотрудники НКВД" >Сотрудники НКВД</option>
+                                                    <option value="Трудармейцы" >Трудармейцы</option>
+                                            </select>
+                </div>
+            </div>
+            <div class="cell medium-4 select-outer">
+                <div class="custom-select">
+                    <select name="sort">
+                        <option value="">Сортировать</option>
+                        <option value="by_date" >по дате съемки</option>
+                        <option value="by_publication" >по дате публикации</option>
+                        <option value="by_name" >по имени</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="grid-container video-list">
+    <div class="grid-x grid-margin-x">
+                            <a class="cell medium-6 large-4 video-in-list" href="film-444-moy-gulag/index.html">
+                <div class="image">
+                    <img srcset="../upload/resize_cache/iblock/04c/358_170_1/4z74mfrk24z67fy0mfw49wfst7mgffue.jpg 1x, ../upload/resize_cache/iblock/04c/716_340_1/4z74mfrk24z67fy0mfw49wfst7mgffue.jpg 2x" alt="">
+                </div>
+                <div class="inner">
+                    <div class="heading">Евсеев Константин Дмитриевич</div>
+                    <div class="title"><p>Воспоминания сотрудника Владимирского централа Константина Дмитриевича Евсеева о том, как он пришел работать в тюрьму и остался в ней на 35 лет</p></div>
+                    <div class="date">2023</div>
+                    
+                </div>
+                <hr>
+                <div class="inner-category">
+                    <div>Сотрудники НКВД</div>
+                </div>
+            </a>
+                    <a class="cell medium-6 large-4 video-in-list" href="film-377-moy-gulag/index.html">
+                <div class="image">
+                    <img srcset="../upload/resize_cache/iblock/c95/358_170_1/1sbjzb438tm0hnii0773ft5uaim1ycpk.jpg 1x, ../upload/resize_cache/iblock/c95/716_340_1/1sbjzb438tm0hnii0773ft5uaim1ycpk.jpg 2x" alt="">
+                </div>
+                <div class="inner">
+                    <div class="heading">Кромина Нина Андреевна</div>
+                    <div class="title"><p>История Нины Кроминой о расстреле отца, высылке из Москвы в Кировскую область, последующем аресте матери и жизни в детском доме</p></div>
+                    <div class="date">2023</div>
+                                            <div class="fullfilm">есть полная версия интервью</div>
+                    
+                </div>
+                <hr>
+                <div class="inner-category">
+                    <div>Дети репреcсированных</div>
+                </div>
+            </a>
+                    <a class="cell medium-6 large-4 video-in-list" href="film-433-moy-gulag/index.html">
+                <div class="image">
+                    <img srcset="../upload/resize_cache/iblock/574/358_170_1/e5jhkvags3oszx11xu6nivmjjdbrp8k7.jpg 1x, ../upload/resize_cache/iblock/574/716_340_1/e5jhkvags3oszx11xu6nivmjjdbrp8k7.jpg 2x" alt="">
+                </div>
+                <div class="inner">
+                    <div class="heading">Тареева Энгелина Борисовна</div>
+                    <div class="title"><p>Воспоминания Энгелины Борисовны Тареевой об аресте отца, жизни в эвакуации и пятой графе в документах</p></div>
+                    <div class="date">2022</div>
+                    
+                </div>
+                <hr>
+                <div class="inner-category">
+                    <div>Дети репреcсированных</div>
+                </div>
+            </a>
+                    <a class="cell medium-6 large-4 video-in-list" href="film-393-moy-gulag/index.html">
+                <div class="image">
+                    <img srcset="../upload/resize_cache/iblock/891/358_170_1/1i1vdtqpmzpqjmy2yhkwibtgbxdm2l3t.jpg 1x, ../upload/resize_cache/iblock/891/716_340_1/1i1vdtqpmzpqjmy2yhkwibtgbxdm2l3t.jpg 2x" alt="">
+                </div>
+                <div class="inner">
+                    <div class="heading">Леман Эльза Альбертовна</div>
+                    <div class="title"><p>Рассказ дочери известного композитора Альберта Лемана Эльзы о том, как ее отца отправили в трудовую армию НКВД из-за национальности</p></div>
+                    <div class="date">2023</div>
+                    
+                </div>
+                <hr>
+                <div class="inner-category">
+                    <div>Дети репреcсированных</div>
+                </div>
+            </a>
+                    <a class="cell medium-6 large-4 video-in-list" href="film-440-moy-gulag/index.html">
+                <div class="image">
+                    <img srcset="../upload/resize_cache/iblock/e08/358_170_1/7rqvhff89wtu4gvkg2uf06zsfgtj1nnk.jpg 1x, ../upload/resize_cache/iblock/e08/716_340_1/7rqvhff89wtu4gvkg2uf06zsfgtj1nnk.jpg 2x" alt="">
+                </div>
+                <div class="inner">
+                    <div class="heading">Мамакаев Эдуард Арбиевич</div>
+                    <div class="title"><p>Воспоминания чеченского поэта, писателя и публициста Эдуарда Арбиевича Мамакаева об аресте отца и депортации</p></div>
+                    <div class="date">2018</div>
+                    
+                </div>
+                <hr>
+                <div class="inner-category">
+                    <div>Депортированные</div>
+                </div>
+            </a>
+                    <a class="cell medium-6 large-4 video-in-list" href="film-313-moy-gulag/index.html">
+                <div class="image">
+                    <img srcset="../upload/resize_cache/iblock/e09/358_170_1/840sqxfhddw66qi8jfm1wfab2wym8lz6.png 1x, ../upload/resize_cache/iblock/e09/716_340_1/840sqxfhddw66qi8jfm1wfab2wym8lz6.png 2x" alt="">
+                </div>
+                <div class="inner">
+                    <div class="heading">Турумова-Домбровская Клара Файзулаевна</div>
+                    <div class="title"><p>Рассказ вдовы Юрия Домбровского о его многочисленных арестах, освобождении из лагеря, реабилитации, литературной деятельности и смерти</p></div>
+                    <div class="date">2021</div>
+                    
+                </div>
+                <hr>
+                <div class="inner-category">
+                    <div>Свидетели</div>
+                </div>
+            </a>
+        
+    </div>
+    
+<nav>
+    <ul class="pagination">
+                                    <li class="previous"><a href="index.html_nav-more-news=page-1.html"><i class="icon-left"> </i></a></li>
+                <li class="previous"><a href="index.html_nav-more-news=page-2.html"><i class="icon-left small"> </i></a></li>
+                    
+        
+                            <li><a href="index.html_nav-more-news=page-1.html">1</a></li>
+                        
+        
+                            <li><a href="index.html_nav-more-news=page-2.html">2</a></li>
+                        
+        
+                            <li class="current">3</li>
+                        
+        
+                            <li><a href="index.html_nav-more-news=page-4.html">4</a></li>
+                        
+        
+                            <li><a href="index.html_nav-more-news=page-5.html">5</a></li>
+                        
+        
+
+                    <li class="next"><a href="index.html_nav-more-news=page-4.html"><i class="icon-right small"></i></a></li>
+            <li class="next"><a href="index.html_nav-more-news=page-72.html"><i class="icon-right"> </i></a></li>
+            </ul>
+</nav>
+    <!--
+    <nav>
+        <ul class="pagination">
+            <li class="previous disabled"><i class="icon-left"> </i></li>
+            <li class="current">1</li>
+            <li><a href="../">2</a></li>
+            <li><a href="../index.html">3</a></li>
+            <li><a href="../">4</a></li>
+            <li><a href="../index.html">5</a></li>
+            <li class="next"><a href="../"><i class="icon-right"> </i></a></li>
+        </ul>
+    </nav>
+    -->
+</section>
+
+
+
+
+
+
+    </div>
+    <footer id="footer">
+    <div class="grid-container">
+        <div class="grid-x grid-padding-x">
+
+            <div class="cell large-3  large-offset-1  socials medium-text-right">
+                            </div>
+            <div class="cell large-3 logos medium-auto">
+                <a href="../index.html" class="museum">
+                    <img src="../local/templates/main/assets/img/logos/logo_wht.svg" alt="Мой ГУЛАГ" />
+                </a>
+                <a href="https:/gmig.ru/" class="museum" target="_blank" rel="nofollow">
+                    <img src="../local/museum.svg" alt="Музей истории ГУЛАГА" />
+                </a>
+
+                <p>Студия визуальной антропологии<br />Музея истории ГУЛАГа</p>
+
+            </div>
+<!--            <div class="cell studio">
+                <p>Студия визуальной антропологии<br />Музея истории ГУЛАГа</p>
+            </div>-->
+            <nav class="cell large-3  footer-menu">
+                <ul class="menu vertical">
+                    <li><a href="../about/index.html">О проекте</a></li>
+                    <li><a href="index.html">Фильмы</a></li>
+                    <li><a href="../map.html">Карта съемок</a></li>
+                    <li><a href="../team/index.html">Команда</a></li>
+                    <li><a href="../contacts/index.html">Контакты</a></li>
+
+                </ul>
+            </nav>
+
+
+
+
+
+            <div class="cell hide-for-medium">
+                <hr />
+            </div>
+
+            <div class="cell">
+                <hr />
+            </div>
+            <div class="cell contacts medium-9 xlarge-10">
+                <div class="grid-x grid-padding-x">
+                    <div class="cell medium-6 large-5">
+                        <p>
+                            127473, г. Москва,<br class="" />
+                            1-й Самотечный пер., д. 9, стр. 1
+                        </p>
+                    </div>
+                    <div class="cell medium-6 large-7">
+                        <p>
+                            <a href="mailto:mygulag.gmig@culture.mos.ru">mygulag.gmig@culture.mos.ru</a><br />
+                            <a href="tel:+74956217310">+7 495 621-73-10</a>
+                            <br class="show-for-large hide-for-xlarge" />
+                        </p>
+                        <p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="cell actions medium-3 xlarge-2 medium-text-right">
+                <div class="grid-x">
+                    <div class="cell small-7 medium-12">
+
+                    </div>
+                    <div class="cell small-5 medium-12 copyrights">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+<script src="../local/templates/main/assets/js/app.js"></script>
+<script src="../local/templates/main/assets/js/app2.js"></script>
+
+</body>
+</html>

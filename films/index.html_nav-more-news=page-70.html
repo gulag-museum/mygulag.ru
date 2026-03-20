@@ -1,0 +1,406 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой ГУЛАГ</title>
+    <link rel="stylesheet" href="../local/templates/main/assets/css/app.css">
+    <link rel="stylesheet" href="../local/templates/main/assets/css/app2.css">
+    <link rel="icon" href="../local/templates/main/assets/img/favicon.png">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+</head>
+<body>
+<div id="wrapper">
+    <header id="header" class="compensate-for-scrollbar">
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x align-middle">
+                <div class="cell top">
+                    <div class="grid-x">
+                        <div class="cell auto department show-for-large">
+                            Студия визуальной антропологии Музея истории ГУЛАГа
+                        </div>
+                        <div class="cell shrink actions">
+                            <span class="address"><a href="../contacts/">
+                                Контакты <i class="icon-phone"> </i></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell logo auto large-shrink">
+                    <a href="../">
+                        <img src="../local/templates/main/assets/img/logos/logo_wht.svg" alt="Мой ГУЛАГ" />
+                    </a>
+                </div>
+
+                
+<nav class="cell auto main-menu">
+    <ul class="menu vertical">
+
+	
+	
+		
+			                <li ><a href="../about/">О проекте</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+			                <li class="active"><a href="index.html">Фильмы</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+			                <li ><a href="../search/">Поиск по тексту</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+			                <li ><a href="../map/">Карта съёмок</a></li>
+			
+		
+	
+	
+
+	
+	
+		
+			                <li ><a href="../team/">Команда</a></li>
+			
+		
+	
+	
+
+                </ul>
+</nav>
+
+                <div class="cell shrink placemark hide-for-large">
+                    <a href="../map" aria-label="Контакты">
+                        <i class="icon-placemark"></i>
+                    </a>
+                </div>
+                <div class="cell shrink menu-toggle hide-for-large">
+                    <button class="burger" data-toggle-menu aria-label="Показать меню">
+                        <div>
+                            <i class="i1"></i>
+                            <i class="i2"></i>
+                            <i class="i3"></i>
+                        </div>
+                    </button>
+                </div>
+                <!--
+                <div class="cell shrink search">
+                    <button class="icon-search" data-toggle-search aria-label="Поиск по сайту"></button>
+                </div>
+                -->
+            </div>
+        </div>
+        <div class="menu-bg"> </div>
+    </header>
+    <div class="menu-overlay"></div>
+    <!--
+    <form class="search-overlay" action="search.html">
+        <div class="inner">
+            <div>
+                <i class="icon-close show-for-large" aria-label="Скрыть" role="button" data-close></i>
+                <div class="grid-container">
+                    <label class="seamless search-input">
+                        <input type="text" autofocus="0" name="query" placeholder="Поиск по сайту" required />
+                        <button type="submit" aria-label="Искать"><i class="icon-search"> </i></button>
+                        <div class="line"></div>
+                    </label>
+                    <div class="text-center">
+                        <a class="button outline hide-for-large" role="button" data-toggle-search>Закрыть поиск</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    -->
+
+    <div id="content-wrapper">
+
+<section class="month-picker publishing " data-load-publications-from="#" id="publications">
+
+    <div class="grid-container">
+        <div class="heading">Фильмы</div>
+        <form action="#publications" autocomplete="off" id="search_publication_form">
+            <label class="seamless small search-input">
+                <i class="icon-close search-close"> </i>
+                <div class="sub-heading">Поиск фильмов</div>
+                <input type="text" autocomplete="off" name="search" placeholder="Поиск" required value="" />
+                <button type="submit" aria-label="Искать"><i class="icon-search"> </i></button>
+                <div class="line"> </div>
+            </label>
+            <input type="hidden" name="category" value="" />
+            <input type="hidden" name="sort" value="" />
+        </form>
+        <div class="grid-x grid-padding-x">
+            <div class="cell medium-4 select-outer">
+                <div class="custom-select">
+                    <select name="category">
+                        <option value="">Все категории</option>
+                                                    <option value="Депортированные" >Депортированные</option>
+                                                    <option value="Дети репреcсированных" >Дети репреcсированных</option>
+                                                    <option value="Дети сотрудников НКВД" >Дети сотрудников НКВД</option>
+                                                    <option value="Диссиденты" >Диссиденты</option>
+                                                    <option value="Лагерники" >Лагерники</option>
+                                                    <option value="Раскулаченные" >Раскулаченные</option>
+                                                    <option value="Свидетели" >Свидетели</option>
+                                                    <option value="Сотрудники НКВД" >Сотрудники НКВД</option>
+                                                    <option value="Трудармейцы" >Трудармейцы</option>
+                                            </select>
+                </div>
+            </div>
+            <div class="cell medium-4 select-outer">
+                <div class="custom-select">
+                    <select name="sort">
+                        <option value="">Сортировать</option>
+                        <option value="by_date" >по дате съемки</option>
+                        <option value="by_publication" >по дате публикации</option>
+                        <option value="by_name" >по имени</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="grid-container video-list">
+    <div class="grid-x grid-margin-x">
+                            <a class="cell medium-6 large-4 video-in-list" href="../films/film-68-moy-gulag/">
+                <div class="image">
+                    <img srcset="../upload/resize_cache/iblock/fc9/358_170_1/b2t02j7ad0673wwp7h4vlm2g9kyx63n3.jpg 1x, ../upload/resize_cache/iblock/fc9/716_340_1/b2t02j7ad0673wwp7h4vlm2g9kyx63n3.jpg 2x" alt="">
+                </div>
+                <div class="inner">
+                    <div class="heading">Павельчук Валентина Фёдоровна</div>
+                    <div class="title"><p>Валентина Фёдоровна долгое время не знала отца – он был арестован ещё до её рождения. Вскоре после него забрали и мать Валентины — но та была освобождена уже через полтора года</p></div>
+                    <div class="date">2015</div>
+                    
+                </div>
+                <hr>
+                <div class="inner-category">
+                    <div>Дети репреcсированных</div>
+                </div>
+            </a>
+                    <a class="cell medium-6 large-4 video-in-list" href="../films/film-308-moy-gulag/">
+                <div class="image">
+                    <img srcset="../upload/resize_cache/iblock/799/358_170_1/2iz80zzi0dwjelmytu0uux1c9v9d823s.jpg 1x, ../upload/resize_cache/iblock/799/716_340_1/2iz80zzi0dwjelmytu0uux1c9v9d823s.jpg 2x" alt="">
+                </div>
+                <div class="inner">
+                    <div class="heading">Адамова Тамара Адамовна</div>
+                    <div class="title"><p>Тамара Адамовна родилась на спецпоселении, в семье ассирийцев, которые в 1949 году были принудительно высланы из Азербайджанской ССР в Сибирь</p></div>
+                    <div class="date">2022</div>
+                                            <div class="fullfilm">есть полная версия интервью</div>
+                    
+                </div>
+                <hr>
+                <div class="inner-category">
+                    <div>Депортированные</div>
+                </div>
+            </a>
+                    <a class="cell medium-6 large-4 video-in-list" href="../films/film-319-moy-gulag/">
+                <div class="image">
+                    <img srcset="../upload/resize_cache/iblock/338/358_170_1/e7wgm6n82x5opecfvfn4md1922dtbhz4.jpg 1x, ../upload/resize_cache/iblock/338/716_340_1/e7wgm6n82x5opecfvfn4md1922dtbhz4.jpg 2x" alt="">
+                </div>
+                <div class="inner">
+                    <div class="heading">Кваша Мая Семеновна</div>
+                    <div class="title"><p>Отец Маи Семёновны — крупный инженер-строитель — был расстрелян в 1938 году за антисоветскую деятельность, а мать отправлена в АЛЖИР на 8 лет</p></div>
+                    <div class="date">2022</div>
+                    
+                </div>
+                <hr>
+                <div class="inner-category">
+                    <div>Дети репреcсированных</div>
+                </div>
+            </a>
+                    <a class="cell medium-6 large-4 video-in-list" href="../films/film-450-moy-gulag/">
+                <div class="image">
+                    <img srcset="../upload/resize_cache/iblock/4e8/358_170_1/eznyn1ynb09x73d3wzj8tqio7ua8iuk9.jpg 1x, ../upload/resize_cache/iblock/4e8/716_340_1/eznyn1ynb09x73d3wzj8tqio7ua8iuk9.jpg 2x" alt="">
+                </div>
+                <div class="inner">
+                    <div class="heading">Маркиш Давид Перецович</div>
+                    <div class="title"><p>Воспоминания Маркиша Давида Перецовича о своем отце — известном еврейском поэте Переце Маркише, расстрелянном в 1952 году по делу Еврейского антифашистского комитета</p></div>
+                    <div class="date">2023</div>
+                    
+                </div>
+                <hr>
+                <div class="inner-category">
+                    <div>Дети репреcсированных</div>
+                </div>
+            </a>
+                    <a class="cell medium-6 large-4 video-in-list" href="../films/film-175-moy-gulag/">
+                <div class="image">
+                    <img srcset="../upload/resize_cache/iblock/b99/358_170_1/lbenraz0myroqb2ds7h76k8ubqudm2em.jpg 1x, ../upload/resize_cache/iblock/b99/716_340_1/lbenraz0myroqb2ds7h76k8ubqudm2em.jpg 2x" alt="">
+                </div>
+                <div class="inner">
+                    <div class="heading">Сапега Вероника Степановна</div>
+                    <div class="title"><p>В 1938 году за два месяца в семье Вероники Степановны было арестовано сразу три человека: отец, сестра и брат. Сама Вероника попала в детприёмник, а оттуда — в детский дом</p></div>
+                    <div class="date">2018</div>
+                                            <div class="fullfilm">есть полная версия интервью</div>
+                    
+                </div>
+                <hr>
+                <div class="inner-category">
+                    <div>Дети репреcсированных</div>
+                </div>
+            </a>
+                    <a class="cell medium-6 large-4 video-in-list" href="../films/film-117-moy-gulag/">
+                <div class="image">
+                    <img srcset="../upload/resize_cache/iblock/133/358_170_1/qfz4u2dqsqwcfnmuy29q3nipwpiynrzc.jpg 1x, ../upload/resize_cache/iblock/133/716_340_1/qfz4u2dqsqwcfnmuy29q3nipwpiynrzc.jpg 2x" alt="">
+                </div>
+                <div class="inner">
+                    <div class="heading">Омаров Абдулахмит Хамзатович</div>
+                    <div class="title"><p>23 февраля 1944 года семья Омаровых была выслана в Казахстан из родного ингушского села Таргим. К весне 1945-го года из семи членов семьи в живых остался только один — Абдулахмит Хамзатович</p></div>
+                    <div class="date">2018</div>
+                    
+                </div>
+                <hr>
+                <div class="inner-category">
+                    <div>Депортированные</div>
+                </div>
+            </a>
+        
+    </div>
+    
+<nav>
+    <ul class="pagination">
+                                    <li class="previous"><a href="index.html_nav-more-news=page-1.html"><i class="icon-left"> </i></a></li>
+                <li class="previous"><a href="index.html_nav-more-news=page-69.html"><i class="icon-left small"> </i></a></li>
+                    
+        
+                            <li><a href="index.html_nav-more-news=page-68.html">68</a></li>
+                        
+        
+                            <li><a href="index.html_nav-more-news=page-69.html">69</a></li>
+                        
+        
+                            <li class="current">70</li>
+                        
+        
+                            <li><a href="index.html_nav-more-news=page-71.html">71</a></li>
+                        
+        
+                            <li><a href="index.html_nav-more-news=page-72.html">72</a></li>
+                        
+        
+
+                    <li class="next"><a href="index.html_nav-more-news=page-71.html"><i class="icon-right small"></i></a></li>
+            <li class="next"><a href="index.html_nav-more-news=page-72.html"><i class="icon-right"> </i></a></li>
+            </ul>
+</nav>
+    <!--
+    <nav>
+        <ul class="pagination">
+            <li class="previous disabled"><i class="icon-left"> </i></li>
+            <li class="current">1</li>
+            <li><a href="../">2</a></li>
+            <li><a href="../index.html">3</a></li>
+            <li><a href="../">4</a></li>
+            <li><a href="../index.html">5</a></li>
+            <li class="next"><a href="../"><i class="icon-right"> </i></a></li>
+        </ul>
+    </nav>
+    -->
+</section>
+
+
+
+
+
+
+    </div>
+    <footer id="footer">
+    <div class="grid-container">
+        <div class="grid-x grid-padding-x">
+
+            <div class="cell large-3  large-offset-1  socials medium-text-right">
+                            </div>
+            <div class="cell large-3 logos medium-auto">
+                <a href="../" class="museum">
+                    <img src="../local/templates/main/assets/img/logos/logo_wht.svg" alt="Мой ГУЛАГ" />
+                </a>
+                <a href="https://gmig.ru/" class="museum" target="_blank" rel="nofollow">
+                    <img src="https://gmig.ru/local/templates/gulag/dist/assets/img/logos/museum.svg" alt="Музей истории ГУЛАГА" />
+                </a>
+
+                <p>Студия визуальной антропологии<br />Музея истории ГУЛАГа</p>
+
+            </div>
+<!--            <div class="cell studio">
+                <p>Студия визуальной антропологии<br />Музея истории ГУЛАГа</p>
+            </div>-->
+            <nav class="cell large-3  footer-menu">
+                <ul class="menu vertical">
+                    <li><a href="../about/">О проекте</a></li>
+                    <li><a href="index.html">Фильмы</a></li>
+                    <li><a href="../map/">Карта съемок</a></li>
+                    <li><a href="../team/">Команда</a></li>
+                    <li><a href="../contacts/">Контакты</a></li>
+
+                </ul>
+            </nav>
+
+
+
+
+
+            <div class="cell hide-for-medium">
+                <hr />
+            </div>
+
+            <div class="cell">
+                <hr />
+            </div>
+            <div class="cell contacts medium-9 xlarge-10">
+                <div class="grid-x grid-padding-x">
+                    <div class="cell medium-6 large-5">
+                        <p>
+                            127473, г. Москва,<br class="" />
+                            1-й Самотечный пер., д. 9, стр. 1
+                        </p>
+                    </div>
+                    <div class="cell medium-6 large-7">
+                        <p>
+                            <a href="mailto:mygulag.gmig@culture.mos.ru">mygulag.gmig@culture.mos.ru</a><br />
+                            <a href="tel:+74956217310">+7 495 621-73-10</a>
+                            <br class="show-for-large hide-for-xlarge" />
+                        </p>
+                        <p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="cell actions medium-3 xlarge-2 medium-text-right">
+                <div class="grid-x">
+                    <div class="cell small-7 medium-12">
+
+                    </div>
+                    <div class="cell small-5 medium-12 copyrights">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+<script src="../local/templates/main/assets/js/app.js"></script>
+<script src="../local/templates/main/assets/js/app2.js"></script>
+
+</body>
+</html>

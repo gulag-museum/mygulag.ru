@@ -1,0 +1,8 @@
+# Конфиги с паролями
+configuration.php
+.env
+settings.py
+
+# Логи и временные файлы
+*.log
+.DS_Store
