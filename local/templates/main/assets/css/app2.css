@@ -1,0 +1,178 @@
+.search-expanded {
+    margin-bottom: 155px;
+}
+
+
+.news-slider2.owl-carousel .owl-item img {
+    width: auto;
+    height: 645px;
+    margin: auto;
+    object-fit: contain;
+}
+
+
+.sb .mapboxgl-popup-content {
+	background: #242424;
+	padding: 12px 30px;
+}
+.sb.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
+	border-top-color: #242424;
+}
+
+.sb .mapboxgl-popup-close-button {
+	color: #a5a5a5;
+	font-size: 20px;
+	right: 9px;
+	top: 5px;
+	cursor: pointer;
+}
+.sb .mappoint_item {
+	display: block;
+	margin: 10px 0;
+}
+.sb .mappoint_item .name {
+	font-size: 16px;
+	cursor: pointer;
+}
+.sb .mappoint_item .category {
+	color: #a5a5a5;
+	cursor: pointer;
+}
+.project-mygulag .header-image div::after {
+	content: none;
+}
+.team-pers {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.team-pers .image {
+	height: 180px;
+	width: 180px;
+	border-radius: 90px;
+	margin: auto;
+	overflow: hidden;
+}
+.team-pers .image img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+	transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s,-webkit-transform .5s;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+}
+.team-pers:hover .image img {
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+.team-pers .inner .heading {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #ffecc7;
+}
+.team-pers .inner .contact {
+	margin-bottom: 1.0625rem;
+  font-size: .8125rem;
+  font-weight: 400;
+  line-height: 1.1875rem;
+}
+
+.team-pers-list {
+	margin: 1rem 0;
+}
+.team-pers-list .heading {
+    margin-top: 1rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #ffecc7;
+}
+
+#header .top .actions .address i {
+	font-size: .6rem;
+}
+
+.icon-right.small {
+	width: 20px;
+	overflow: hidden;
+}
+.icon-right.small:before {
+	margin-left: -12px;
+}
+.icon-left.small {
+	width: 20px;
+	overflow: hidden;
+}
+
+.story .story-file {
+	min-height: auto;
+}
+
+.dark-text-page .contact-item .text.name {
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+.button2.facebook {
+	background-color: #0088cc;
+}
+.button2.yadzen {
+	background-color: #535353;	
+}
+/*Перенсти в общий css*/
+/*поиск в фильмах в мобилке*/
+#header{
+    z-index:7;
+}
+.menu-overlay, .search-overlay {
+    z-index: 6;
+}
+.month-picker {
+    padding-bottom:3rem;
+}
+@media screen and (max-width: 45em) {
+    .month-picker .search-input.seamless {
+        top: 10.5rem;
+    }
+}
+
+@media screen and (min-width: 75em) {
+    .project-mygulag .text {
+        width: 37.875rem;
+    }
+}
+.video-in-list .inner .date {
+    bottom: 20px;
+}
+.video-in-list .inner .fullfilm {
+    position: absolute;
+    bottom: -5px;
+    font-size: .6125rem;
+    font-weight: 400;
+    color: #c6c6c6;
+}
+
+.full-story_vk {
+    min-height: 210px;
+}
+@media screen and (min-width: 45em) {
+    .full-story_vk {
+        min-height: 360px;
+    }
+}
+@media screen and (min-width: 75em) {
+    .full-story_vk {
+        min-height: 505px;
+    }
+}
+.video-in-list .inner .title.srchres {
+	font-size: 1rem;
+}
+.video-in-list .inner .title b {
+	font-weight: 800;
+}
